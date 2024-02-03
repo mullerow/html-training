@@ -3,3 +3,12 @@
 ::after {
   box-sizing: border-box;
 }
+
+.sport-article,
+.music-article,
+.history-article,
+.physics-article,
+.chemistry-article {
+  background-color: grey;
+  border: 5px solid red;
+}
