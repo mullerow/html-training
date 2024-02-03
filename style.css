@@ -1,7 +1,22 @@
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+article p {
+  background-color: green;
+  font-size: 18px;
 }
 
 .sport-article,
@@ -11,4 +26,13 @@
 .chemistry-article {
   background-color: grey;
   border: 5px solid red;
+}
+
+.header-span {
+  color: hotpink;
+}
+
+li + li,
+blockquote + blockquote {
+  margin-top: 20px;
 }
