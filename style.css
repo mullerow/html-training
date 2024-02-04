@@ -14,7 +14,17 @@
   font-family: "Manrope", sans-serif;
 }
 
-article p {
+html {
+  background-image: radial-gradient(
+    rgb(51, 138, 224) 15%,
+    rgb(73, 187, 202) 20%,
+    rgb(34, 223, 236) 40%,
+    rgb(167, 161, 161) 50%,
+    rgb(51, 138, 224) 60%,
+    rgb(73, 187, 202) 95%
+  );
+}
+S article p {
   background-color: green;
   font-size: 18px;
 }
@@ -24,8 +34,9 @@ article p {
 .history-article,
 .physics-article,
 .chemistry-article {
-  background-color: grey;
+  background-color: rgb(168, 168, 168);
   border: 5px solid red;
+  padding: 20px;
 }
 
 .header-span {
@@ -35,4 +46,8 @@ article p {
 li + li,
 blockquote + blockquote {
   margin-top: 20px;
+}
+
+article + article {
+  margin-top: 50px;
 }
