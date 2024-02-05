@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0.5vh;
+}
+
+html {
+  font-size: 20px;
+  background-color: wheat;
+}
+
+.first {
+  border: 3px solid black;
+  display: inline-flex;
+  width: 80vw;
+}
+
+.second {
+  border: 2px dotted red;
+}
+
+.third {
+  border: 3px double hotpink;
+  display: inline-flex;
+}
+
+.first .second div:nth-child(2) {
+  background-color: blue;
+}
+
+.first .second div:nth-child(1) {
+  background-color: dodgerblue;
+}
+
+.first .second div:nth-child(3) {
+  background-color: rgb(0, 233, 250);
+}
+
+.first:nth-child(6) .second:nth-child(3) .third:nth-child(3) {
+  background-color: red;
+}
