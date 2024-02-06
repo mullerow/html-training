@@ -7,26 +7,32 @@
 
 html {
   font-size: 20px;
+  font-weight: bold;
+  text-align: center;
   background-color: wheat;
 }
 
 .first {
   border: 3px solid black;
   display: inline-flex;
-  width: 80vw;
+  _width: 80vw;
+  flex-direction: column;
 }
 
 .second {
   border: 2px dotted red;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .third {
   border: 3px double hotpink;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .first .second div:nth-child(2) {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.685);
 }
 
 .first .second div:nth-child(1) {
@@ -37,6 +43,40 @@ html {
   background-color: rgb(0, 233, 250);
 }
 
-.first:nth-child(6) .second:nth-child(3) .third:nth-child(3) {
-  background-color: red;
+.first:nth-child(2),
+.first:nth-child(3),
+.first:nth-child(4),
+.first:nth-child(5),
+.first:nth-child(6),
+.first:nth-child(7),
+.first:nth-child(8),
+.first:nth-child(9),
+.first:nth-child(10) {
+  display: none;
+}
+
+.first:nth-child(1) {
+  flex-direction: row;
+  width: 80vw;
+  height: 80vh;
+}
+
+.second:nth-child(1) {
+  flex-grow: 12;
+}
+
+.second:nth-child(2) {
+  flex-grow: 3;
+}
+
+.second:nth-child(3) {
+  flex-grow: 3;
+}
+
+.second:nth-child(4) {
+  flex-grow: 3;
+}
+
+.second:nth-child(5) {
+  flex-grow: 3;
 }
