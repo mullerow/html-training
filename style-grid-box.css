@@ -1,0 +1,17 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0.5vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main div:nth-child(6) {
+  display: none;
+}
