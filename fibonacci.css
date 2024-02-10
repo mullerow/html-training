@@ -6,91 +6,86 @@
 
 main {
   display: grid;
-  width: 400px;
-  height: 400px;
-  gap: 2px;
+  width: 340px;
+  height: 210px;
   text-align: center;
   font-size: 24px;
-  /*
-  grid-template-areas:
-    "a3 a3 a2 a2 a8 a8 a8 a8"
-    "a3 a3 a1 b1 a8 a8 a8 a8"
-    "a5 a5 a5 a5 a8 a8 a8 a8"
-    "a5 a5 a5 a5 a8 a8 a8 a8"
-    "a5 a5 a5 a5 a8 a8 a8 a8"
-    "a5 a5 a5 a5 a8 a8 a8 a8";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    */
+  margin-left: 100px;
 
   grid-template-areas:
-    "a89 a89 a89 a89 a89 a89 a89"
-    "a21 a13 a13 a13 a13 a55 a55"
-    "a21 a3 a2 a2 a8 a55 a55"
-    "a21 a3 a1 b1 a8 a55 a55"
-    "a21 a5 a5 a5 a8 a55 a55"
-    "a34 a34 a34 a34 a34 a55 a55";
-  grid-template-columns: 8fr 2fr 1fr 1fr 4fr 8fr;
-  grid-template-rows: 16fr 4fr 1fr 1fr 2fr 8fr;
+    "aa21 aa13 aa13 aa13 aa13"
+    "aa21 aaa3 aaa2 aaa2 aaa8"
+    "aa21 aaa3 aaa1 bbb1 aaa8"
+    "aa21 aaa5 aaa5 aaa5 aaa8";
+
+  grid-template-columns: 21fr 3fr 1fr 1fr 8fr;
 }
 
 main > div {
   background-color: blueviolet;
-  border-radius: 5% 10% 20% 40%;
+  _border-radius: 5% 10% 20% 40%;
 }
 
 .fibo1 {
-  grid-area: a1;
+  grid-area: aaa1;
   background-color: #004d66;
+  height: 10px;
 }
 
 .fibo2 {
-  grid-area: b1;
+  grid-area: bbb1;
   background-color: #004d66;
+  height: 10px;
 }
 
 .fibo3 {
-  grid-area: a2;
+  grid-area: aaa2;
   background-color: #006080;
+  height: 20px;
 }
 
 .fibo4 {
-  grid-area: a3;
+  grid-area: aaa3;
   background-color: #007399;
+  height: 30px;
 }
 
 .fibo5 {
-  grid-area: a5;
+  grid-area: aaa5;
   background-color: #0086b3;
+  height: 50px;
 }
 
 .fibo6 {
-  grid-area: a8;
+  grid-area: aaa8;
   background-color: #0099cc;
+  height: 80px;
 }
 
 .fibo7 {
-  grid-area: a13;
+  grid-area: aa13;
   background-color: #00ace6;
+  height: 130px;
 }
 
 .fibo8 {
-  grid-area: a21;
+  grid-area: aa21;
   background-color: #00bfff;
+  height: 210px;
 }
 
 .fibo9 {
-  grid-area: a34;
+  grid-area: aa34;
   background-color: #1ac6ff;
 }
 
 .fibo10 {
-  grid-area: a55;
+  grid-area: aa55;
   background-color: #33ccff;
 }
 
 .fibo11 {
-  grid-area: a89;
+  grid-area: aa89;
   background-color: #4dd2ff;
 }
 
@@ -119,6 +114,9 @@ main > div {
   background-color: #ccf2ff;
 }
 
+main div:nth-child(9),
+main div:nth-child(10),
+main div:nth-child(11),
 main div:nth-child(12),
 main div:nth-child(13),
 main div:nth-child(14),
