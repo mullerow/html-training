@@ -6,7 +6,8 @@
 
 main {
   display: grid;
-  width: 800px;
+  width: 400px;
+  height: 400px;
   gap: 2px;
   text-align: center;
   font-size: 24px;
@@ -35,6 +36,7 @@ main {
 
 main > div {
   background-color: blueviolet;
+  border-radius: 5% 10% 20% 40%;
 }
 
 .fibo1 {
